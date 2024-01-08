@@ -4,7 +4,7 @@ const registerRouter = require("./router");
 
 registerRouter(app);
 
-const port = 3030;
+const port = 8002;
 app.listen(port, () => {
   console.log(`server is running at port ${port}`);
 });
