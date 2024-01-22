@@ -1,4 +1,4 @@
-const Router = require("koa-router");
+import Router from "koa-router";
 const router = new Router();
 
 router.get("/merchant/list", (ctx, next) => {
@@ -19,4 +19,4 @@ router.get("/merchant/list/error", (ctx, next) => {
   };
 });
 
-module.exports = router;
+export default router;

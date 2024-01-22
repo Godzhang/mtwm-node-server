@@ -1,11 +1,12 @@
-const Koa = require("koa");
-const bodyParser = require("koa-bodyparser");
-const app = new Koa();
-const registerRouter = require("./router");
+import Koa from "koa";
+import bodyParser from "koa-bodyparser";
+import registerRouter from "./router/index.js";
 
-registerRouter(app);
+const app = new Koa();
 
 app.use(bodyParser());
+
+registerRouter(app);
 
 // 错误处理
 app.use(async (ctx, next) => {
