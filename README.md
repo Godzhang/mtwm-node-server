@@ -1,8 +1,6 @@
 mtwm-node-server
 
-### todo
+#### 需补充的技术点
 
-- [ ] token
-  - [ ] 生成 token 方法
-  - [ ] 保存 token
-    - [ ] 存储 ?
+- import();
+- github: node-glob

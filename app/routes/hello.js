@@ -1,13 +1,13 @@
 import Router from "koa-router";
-const router = new Router();
+const router = new Router({ prefix: "/hello" });
 
-router.get("/hello/router", (ctx, next) => {
+router.get("/router", (ctx, next) => {
   ctx.body = {
     key: "hello world",
   };
 });
 
-router.get("/hello/world", (ctx, next) => {
+router.get("/world", (ctx, next) => {
   ctx.body = {
     key: "gzyzl",
   };

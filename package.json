@@ -5,18 +5,19 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./src/app.js",
-    "nodemon": "nodemon ./src/app.js"
+    "start": "node ./app/index.js",
+    "nodemon": "nodemon ./app/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.5",
+    "jsonwebtoken": "^9.0.2",
     "koa": "^2.15.0",
     "koa-bodyparser": "^4.4.1",
-    "koa-router": "^12.0.1",
-    "require-directory": "^2.1.1"
+    "koa-jwt": "^4.0.4",
+    "koa-router": "^12.0.1"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
