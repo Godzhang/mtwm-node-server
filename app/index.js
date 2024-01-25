@@ -1,6 +1,9 @@
+import { resolve } from "path";
 import Koa from "koa";
 import bodyParser from "koa-bodyparser";
+import koaStatic from "koa-static";
 import registerRouter from "./routes/index.js";
+import { getDirname } from "./utils/utils.js";
 
 const app = new Koa();
 
@@ -16,6 +19,7 @@ const app = new Koa();
 //   }
 // });
 
+app.use(koaStatic(resolve(getDirname(import.meta.url), "../static")));
 app.use(bodyParser());
 
 registerRouter(app);
