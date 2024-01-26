@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "node ./app/index.js",
-    "nodemon": "nodemon ./app/index.js"
+    "nodemon": "nodemon ./app/index.js",
+    "upload": "node ./deploy/index.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,9 @@
     "koa-static": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "nodemon": "^3.0.2",
+    "ora": "^8.0.1",
+    "shelljs": "^0.8.5",
+    "ssh2-sftp-client": "^10.0.3"
   }
 }
