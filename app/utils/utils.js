@@ -20,3 +20,4 @@ export const failRes = (msg = "失败") => {
 };
 
 export const getDirname = (url) => dirname(fileURLToPath(url));
+export const getFileName = (url) => new URL(url).pathname.split("/").pop();

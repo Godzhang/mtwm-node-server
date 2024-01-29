@@ -6,8 +6,6 @@ mtwm-node-server
 
 #### 需补充的技术点
 
-- [x] import();
-- [ ] github: node-glob
-- [ ] koa-compose
+- [ ] github: node-glob ==没研究明白路径匹配规则，尤其是 es6 语法下
 - [ ] lerna
 - [ ] pnpm
