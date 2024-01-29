@@ -1,4 +1,4 @@
-import { dirname } from "path";
+import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 
 export const successRes = (content, msg = "成功") => {
@@ -20,4 +20,5 @@ export const failRes = (msg = "失败") => {
 };
 
 export const getDirname = (url) => dirname(fileURLToPath(url));
-export const getFileName = (url) => new URL(url).pathname.split("/").pop();
+export const getFileName = (url) => path.basename(url);
+export const getFileNameWithNoExt = (url) => path.basename(url).split(".")[0];
