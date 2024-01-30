@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node ./app/index.js",
-    "nodemon": "nodemon ./app/index.js",
+    "start": "pm2 start ./app/index.js",
+    "dev": "nodemon ./app/index.js",
     "upload": "node ./deploy/index.js"
   },
   "keywords": [],
