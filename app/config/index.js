@@ -7,3 +7,7 @@ export const tokenConfig = {
   secret: "zhangqishigedashuaibi",
   expires: 60 * 60, // 过期时间，单位秒
 };
+
+export const assetConfig = {
+  baseUrl: "http://39.107.159.90:8002",
+};
