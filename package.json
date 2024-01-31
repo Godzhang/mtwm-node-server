@@ -7,7 +7,8 @@
   "scripts": {
     "start": "pm2 start ./app/index.js",
     "dev": "nodemon ./app/index.js",
-    "upload": "node ./deploy/index.js"
+    "upload": "node ./deploy/index.js",
+    "commit": "git-cz"
   },
   "keywords": [],
   "author": "",
@@ -27,5 +28,10 @@
     "ora": "^8.0.1",
     "shelljs": "^0.8.5",
     "ssh2-sftp-client": "^10.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
