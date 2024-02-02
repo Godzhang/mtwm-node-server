@@ -44,3 +44,7 @@ mtwm-node-server
 |  merge   | 合并 |  合并分支，合并分支代码到其他分支  |
 |   sync   | 同步 |  同步分支，同步分支代码到其他分支  |
 |   impr   | 改进 |     改进功能，升级当前功能模块     |
+
+#### mysql 信息
+
+- 查看密码 cat /etc/mysql/debian.cnf
