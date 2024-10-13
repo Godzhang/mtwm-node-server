@@ -4,6 +4,7 @@ import bodyParser from "koa-bodyparser";
 import koaStatic from "koa-static";
 import registerRouter from "./routes/index.js";
 import { getDirname } from "./utils/utils.js";
+import cors from "@koa/cors";
 
 const app = new Koa();
 
@@ -18,7 +19,7 @@ const app = new Koa();
 //     ctx.body = "请求体解析失败";
 //   }
 // });
-
+app.use(cors());
 app.use(koaStatic(resolve(getDirname(import.meta.url), "../static")));
 app.use(bodyParser());
 
